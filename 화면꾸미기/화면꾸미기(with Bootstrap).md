@@ -16,3 +16,9 @@
 BOOTSTRAP 4.x버젼다운
 
 bootstrap.min.css 를 static 디렉토리에 복사붙혀넣기
+
+question_list.html 파일의 코드대로 작성
+
+#### 질문상세 템플릿에 BOOTSTRAP 사용 <question_detail.html>
+
+

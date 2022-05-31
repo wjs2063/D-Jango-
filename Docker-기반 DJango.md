@@ -78,18 +78,18 @@ DATABASES = {
 
 
 11. docker-compose up 실행 완료 
-12. docker ps -a  터미널에서 입력후  해당 컨테이너 id 를 확인 
+12. docker ps -a  터미널에서 입력후  해당 컨테이너 id 를 확인   
 13. docker start 해당 컨테이너 id 복붙 
-14. docker ps -a 로 해당 컨테이너 UP 되어있는지 확인 (되어있다면)  
-15. vscode 에있는 스토어에들어가서 remote development 설치 
-16. shift+command+p 누르고 attach 모드 클릭 -> 접속가능한 컨테이너가 보일것 -> 컨테이너접속하면 vscode 창이 새로뜸 -> 그러면 컨테이너 내부환경에서 vscode 를 실행하는것 
-17. 그리고 ctrl +  ~  를 누르면 vscode 내에서 터미널이 나옴 -> root 디렉토리에서 우리가원하는 프로젝트파일을 찾아서 change directory 를 해줌 (cd명령어) 어디있는지 모르겠다면 ls -a 또는 Dockerfile 이나 compose.yml 에 우리가 지정한 위치가 있음  
-18. 그리고 나서 Django 의 setting.py 또는 urls.py 에 접근가능 그리고 개발진행!! 
+14. docker ps -a 로 해당 컨테이너 UP 되어있는지 확인 (되어있다면)    
+15. vscode 에있는 스토어에들어가서 remote development 설치   
+16. shift+command+p 누르고 attach 모드 클릭 -> 접속가능한 컨테이너가 보일것 -> 컨테이너접속하면 vscode 창이 새로뜸 -> 그러면 컨테이너 내부환경에서 vscode 를 실행하는것   
+17. 그리고 ctrl +  ~  를 누르면 vscode 내에서 터미널이 나옴 -> root 디렉토리에서 우리가원하는 프로젝트파일을 찾아서 change directory 를 해줌 (cd명령어) 어디있는지 모르겠다면 ls -a 또는   Dockerfile 이나 compose.yml 에 우리가 지정한 위치가 있음    
+18. 그리고 나서 Django 의 setting.py 또는 urls.py 에 접근가능 그리고 개발진행!!     
 
-docker exec -it [컨테이너id] /bin/bash --> 해당 컨테이너를 /bin/bash 셀로 실행하겠다는 의미
-docker stop [컨테이너id] 멈추기
-docker ps -a  --> 생성된 컨테이너 를 보여줌
-docker rm [컨테이너id] 해당 
+docker exec -it [컨테이너id] /bin/bash --> 해당 컨테이너를 /bin/bash 셀로 실행하겠다는 의미  
+docker stop [컨테이너id] 멈추기  
+docker ps -a  --> 생성된 컨테이너 를 보여줌  
+docker rm [컨테이너id] 해당   
 
 
 #### 중요한것 setting.py 에 ALLOWED 파트에서 빈리스트로 되어있을것임 해당 리스트를 ['*'] 로 바꿔주자 

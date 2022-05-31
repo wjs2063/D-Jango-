@@ -90,4 +90,7 @@ docker exec -it [컨테이너id] /bin/bash --> 해당 컨테이너를 /bin/bash 
 docker stop [컨테이너id] 멈추기
 docker ps -a  --> 생성된 컨테이너 를 보여줌
 docker rm [컨테이너id] 해당 
-20. 
+
+
+#### 중요한것 setting.py 에 ALLOWED 파트에서 빈리스트로 되어있을것임 해당 리스트를 ['*'] 로 바꿔주자 
+그리고 python manage.py runserver 를 한후  로컬주소 포트 8000 ( 포트는 미리 yml 파일에서 정의함) 으로 접속하면 장고설치완료페이지가뜬다! 이제 개발진행~
